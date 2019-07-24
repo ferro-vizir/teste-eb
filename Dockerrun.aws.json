@@ -4,20 +4,20 @@
     {
       "name": "php-app",
       "host": {
-        "sourcePath": "/home/ferro/Web/fretebras/eb-docker-nginx-proxy"
+        "sourcePath": "/var/app/current/php-app"
       }
     },
     {
       "name": "nginx-proxy-conf",
       "host": {
-        "sourcePath": "/home/ferro/Web/fretebras/eb-docker-nginx-proxy/proxy/conf.d"
+        "sourcePath": "/var/app/current/proxy/conf.d"
       }
-    }  
+    }
   ],
   "containerDefinitions": [
     {
       "name": "php-app",
-      "image": "php:7.3-fpm",
+      "image": "php:fpm",
       "essential": true,
       "memory": 128,
       "mountPoints": [
